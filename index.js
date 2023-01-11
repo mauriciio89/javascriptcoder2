@@ -7,10 +7,10 @@ let producto2 = 20
 let producto3 = 18
 let producto4 = 16
 
-let total
-let nombreProducto
-let cantidad
-let totalDeCompra
+let total = 0
+let nombreProducto = ""
+let cantidad = 0
+let totalDeCompra = 0
 
 
 
