@@ -24,12 +24,15 @@ saludo()
 let productoSeleccionado = ""
 function producto() {
     while(productoSeleccionado !== "6"){
+
          productoSeleccionado = prompt("Elija una opción 1.producto1 - 2.producto2 - 3.producto3 - 4.producto4 - 5.Compra total - 6.Salir")
         
          while (isNaN(productoSeleccionado)){
             productoSeleccionado = prompt("Elija una opción 1.producto1 - 2.producto2 - 3.producto3 - 4.producto4 - 5.Compra total - 6.Salir - Ingrese un número del 1 al 6")
          }
-        
+        if(productoSeleccionado == "6") { 
+        alert("Se ha seleccionado "+ nombreProducto + " por una cantidad de "+ cantidad + " por el precio de " + total)
+        } 
         if(productoSeleccionado == "1"){
         cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado."))
         total = producto1*cantidad
@@ -60,9 +63,7 @@ function producto() {
         }else { 
             alert("Ingresaste una opción incorrecta")
         }
-        if(productoSeleccionado == "6") { 
-        alert("Se ha seleccionado "+ nombreProducto + " por una cantidad de "+ cantidad + " por el precio de " + total)
-        } 
+        
         
         
 
