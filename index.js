@@ -33,24 +33,37 @@ function producto() {
         
         if(productoSeleccionado == "1"){
         cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado."))
+         while(isNaN(cantidad)){
+        cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado. (Solo números)"))
+         }   
+        
         total = producto1*cantidad
          nombreProducto = "producto1"
          totalDeCompra = totalDeCompra + total
 
         }else  if(productoSeleccionado == "2"){
-        cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado."))
+            cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado."))
+            while(isNaN(cantidad)){
+           cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado. (Solo números)"))
+            }   
          total = producto2*cantidad
          nombreProducto = "producto2"
          totalDeCompra = totalDeCompra + total
 
         }else if(productoSeleccionado == "3"){
-        cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado."))
+            cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado."))
+            while(isNaN(cantidad)){
+           cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado. (Solo números)"))
+            }   
          total = producto3*cantidad
          nombreProducto = "producto3"
          totalDeCompra = totalDeCompra + total
 
         }else if(productoSeleccionado == "4"){
-        cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado."))
+            cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado."))
+            while(isNaN(cantidad)){
+           cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado. (Solo números)"))
+            }   
          total = producto4*cantidad
 
          nombreProducto = "producto4"
