@@ -3,11 +3,6 @@ const nombreUsuario = prompt("Cuál es tu nombre?")
 const apellidoUsuario = prompt("Cuál es apellido?")
 
 
-let total = 0
-let nombreProducto = ""
-let cantidad = 0
-let totalDeCompra = 0
-
 
 let productos = [
     {
