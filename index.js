@@ -9,26 +9,26 @@ let cantidad = 0
 let totalDeCompra = 0
 
 
-const productos = [
+let productos = [
     {
-        nombre : "cocacola",
+        nombre : "producto1",
         precio : 25,
-        categoria : "gaseosa",
+        
     },
     {
-        nombre : "fanta",
+        nombre : "producto2",
         precio : 20,
-        categoria : "gaseosa"
+        
     },
     {
-        nombre : "arroz",
+        nombre : "producto3",
         precio : 18,
-        categoria : "fiambre",
+        
     },
     {
-        nombre : "tomate",
+        nombre : "producto4",
         precio : 16,
-        categoria : "verdura",
+        
     },
 ]  
 
@@ -42,14 +42,19 @@ const saludo = () => {
 console.log(saludo)
 saludo()
 
-let productoSeleccionado = ""
-function producto() {
-    while(productoSeleccionado !== "7"){
 
-         productoSeleccionado = prompt("Elija una opción 1.producto1 - 2.producto2 - 3.producto3 - 4.producto4 - 5.Compra total - 6.Ver gaseosa - 7.Salir")
+
+let productoSeleccionado = productos.filter(producto => producto.nombre === producto1 || producto2 || producto3 || producto4); 
+console.log(productoSeleccionado)
+    
+
+function producto() {
+    while(productoSeleccionado !== "6"){
+
+         productoSeleccionado = prompt("Elija una opción 1.producto1 - 2.producto2 - 3.producto3 - 4.producto4 - 5.Compra total -  - 6.Salir")
         
          while (isNaN(productoSeleccionado)){
-            productoSeleccionado = prompt("Elija una opción 1.producto1 - 2.producto2 - 3.producto3 - 4.producto4 - 5.Compra total - 6.Ver gaseosa - 7.Salir Ingrese un número del 1 al 7")
+            productoSeleccionado = prompt("Elija una opción 1.producto1 - 2.producto2 - 3.producto3 - 4.producto4 - 5.Compra total  - 6.Salir Ingrese un número del 1 al 6")
          }
         
         if(productoSeleccionado == "1"){
@@ -93,12 +98,10 @@ function producto() {
         }else if(productoSeleccionado == "5"){
         alert("El valor total de la compra es "+ totalDeCompra)
            
-        }else if (productoSeleccionado == "6"){
-           const gaseosas = productos.filter((el) => el.categoria.includes("gaseosa"))
-           console.log(gaseosas)
-        } 
-        else if(productoSeleccionado == "7") { 
+        
+        }else if(productoSeleccionado == "6") { 
             alert("Gracias por comprar")
+        
         }else { 
             alert("Ingresaste una opción incorrecta")
         }
