@@ -44,11 +44,23 @@ saludo()
 
 
 
-let productoSeleccionado = productos.filter(producto => producto.nombre === producto1 || producto2 || producto3 || producto4); 
-console.log(productoSeleccionado)
+
+ 
+
+
     
 
 function producto() {
+
+let total = 0
+let nombreProducto = ""
+let cantidad = 0
+let totalDeCompra = 0
+
+let productoSeleccionado = productos.filter(producto => {
+    console.log(producto)
+})
+
     while(productoSeleccionado !== "6"){
 
          productoSeleccionado = prompt("Elija una opción 1.producto1 - 2.producto2 - 3.producto3 - 4.producto4 - 5.Compra total -  - 6.Salir")
@@ -63,7 +75,7 @@ function producto() {
         cantidad = parseInt(prompt("Ingrese la cantidad del producto seleccionado. (Solo números)"))
          }   
         
-        total = cocacola*cantidad
+        total = producto1*cantidad
          nombreProducto = "producto1"
          totalDeCompra = totalDeCompra + total
 
